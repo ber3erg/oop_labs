@@ -1,0 +1,23 @@
+﻿{
+  "Name": "Mocковский политех",
+  "List_of_students": [
+    {
+      "Name": "Боб",
+      "Last_name": "Видосов",
+      "Age": 18,
+      "Average_score": 4.5
+    },
+    {
+      "Name": "Игорь",
+      "Last_name": "Иванов",
+      "Age": 18,
+      "Average_score": 4.8
+    },
+    {
+      "Name": "Егор",
+      "Last_name": "Перевозчиков",
+      "Age": 19,
+      "Average_score": 3.7
+    }
+  ]
+}
