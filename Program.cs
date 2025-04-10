@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Text.Encodings.Web;
 using System.Text.Json.Serialization;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace UniversityAndStudents 
 {
@@ -18,14 +19,14 @@ namespace UniversityAndStudents
             name = "неизвестный";
             last_name = "Неизвестный";
             age = 9;
-            average_score = 2.5f;
+            average_score = 2f;
         }
 
         public Student(string name, string last_name, int age, float average_score) {
-            this.name = name;
-            this.last_name = last_name;
-            this.age = age;
-            this.average_score = average_score;
+            Name = name;
+            Last_name = last_name;
+            Age = age;
+            Average_score = average_score;
         }
 
         // Для получения строки с полным именем
@@ -46,29 +47,67 @@ namespace UniversityAndStudents
         public string Name
         {
             get => name;
-            private set => name = value;
+            private set 
+            {
+                if (string.IsNullOrWhiteSpace(value)) {
+                    Console.WriteLine("Ошибка в присвоении Имени. Значение не может быть пустым! теперь она неизвестный");
+                    name = "Неизвестный";
+                } else if (value.Length > 50) {
+                    name = "Длинный";
+                } else 
+                name = value;
+            }
         }
         
         [JsonInclude]
         public string Last_name
         {
             get => last_name;
-            private set => last_name = value;
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value)) {
+                    Console.WriteLine("Ошибка в присвоении фамилии. Значение не может быть пустым! теперь она неизвестный");
+                    last_name = "Неизвестный";
+                } else if (value.Length > 50) {
+                    last_name = "Длинный";
+                } else 
+                last_name = value;
+            }
         }
 
         [JsonInclude]
         public int Age
         {
             get => age;
-            private set => Age = value;
+            private set
+            {
+                if (value < 0) {
+                    Console.WriteLine("Ошибка в присвоении возраста. Возраст не может быть отрицательным! Теперь он равен 0");
+                    age = 0;
+                }
+                else age = value;
+            }
         }
 
         [JsonInclude]
         public float Average_score
         {
             get => average_score;
-            private set => average_score = value;
+            private set
+            {
+            
+                if (value < 0) {
+                    Console.WriteLine("Ошибка в присвоении среднего балла. Он не может быть отрицательным.");
+                    average_score = 0;
+                } else if (value > 5) {
+                    Console.WriteLine("Ошибка в присвоении среднего балла. Он не может быть больше 5");
+                    average_score = 0;
+                }
+                else average_score = value;
+            }
         }
+
+        
     }
 
     class University{
@@ -78,7 +117,7 @@ namespace UniversityAndStudents
         // инициализация
         public University() {
             name = "неизвестный";
-            list_of_students = new List<Student>();
+            list_of_students = new List<Student>{};
         }
         public University(string name){
             this.name = name;
@@ -124,7 +163,16 @@ namespace UniversityAndStudents
         public string Name
         {
             get => name;
-            private set => name = value;
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value)) {
+                    Console.WriteLine("Ошибка в присвоении Названия. Значение не может быть пустым! теперь он неизвесный");
+                    name = "Неизвестный";
+                } else if (value.Length > 110) {
+                    name = "Длинный";
+                } else 
+                name = value;
+            }
         }
         
         [JsonInclude]
@@ -176,7 +224,7 @@ namespace DataAccess
         {
             StudentsRepository uploader_json = new("UniversitiesInformation.json");
             UniversityAndStudents.Student Bob = new("Боб", "Видосов", 18, 4.5f);
-            UniversityAndStudents.Student Igor = new("Игорь", "Иванов", 18, 4.8f);
+            UniversityAndStudents.Student Igor = new("Игорь", " \n \t", -4, 4.8f);
             UniversityAndStudents.Student Egor = new("Егор", "Перевозчиков", 19, 3.7f);
             UniversityAndStudents.University Mospolytech = new("Mocковский политех");
             Mospolytech.Add(Bob);
