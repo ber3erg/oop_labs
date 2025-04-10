@@ -1,0 +1,14 @@
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\bin\Debug\net9.0\lab1.exe
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\bin\Debug\net9.0\lab1.deps.json
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\bin\Debug\net9.0\lab1.runtimeconfig.json
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\bin\Debug\net9.0\lab1.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\bin\Debug\net9.0\lab1.pdb
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.AssemblyInfoInputs.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.AssemblyInfo.cs
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\refint\lab1.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.pdb
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\lab1.genruntimeconfig.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab1\obj\Debug\net9.0\ref\lab1.dll

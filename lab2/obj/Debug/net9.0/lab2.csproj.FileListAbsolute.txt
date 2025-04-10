@@ -1,0 +1,14 @@
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.AssemblyInfoInputs.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.AssemblyInfo.cs
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\bin\Debug\net9.0\lab2.exe
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\bin\Debug\net9.0\lab2.deps.json
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\bin\Debug\net9.0\lab2.runtimeconfig.json
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\bin\Debug\net9.0\lab2.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\bin\Debug\net9.0\lab2.pdb
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\refint\lab2.dll
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.pdb
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\lab2.genruntimeconfig.cache
+C:\Users\ПК\Desktop\учёба\3 семестр\ООП\lab2\obj\Debug\net9.0\ref\lab2.dll
