@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3.csproj": {}
+    "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3\\lab3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3.csproj": {
+    "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3\\lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3.csproj",
+        "projectUniqueName": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3\\lab3.csproj",
         "projectName": "lab3",
-        "projectPath": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3.csproj",
+        "projectPath": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3\\lab3.csproj",
         "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\obj\\",
+        "outputPath": "C:\\Users\\ПК\\Desktop\\учёба\\3 семестр\\ООП\\lab3\\lab3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ПК\\AppData\\Roaming\\NuGet\\NuGet.Config",
