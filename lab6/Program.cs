@@ -7,32 +7,21 @@ namespace ShopManagement
         public string Name { get; private set; }
         public int Amount { get; private set; }
         public double Price { get; private set; }
-        public string? Description { get; private set; }
-        public int? DiscountPercent { get; private set; }
-        public double? Rating { get; private set; }
+        public string? Description { get; set; }
+        public int? DiscountPercent { get; set; }
+        public double? Rating { get; set; }
 
         // инициализация
-        public Product(string name, int amount, double price){
-            Name = name;
+        public Product(string name, int amount, double price, string? description = null, int? discountPercent = null, double? rating = null){
+            Name = name!;
             Amount = amount;
             Price = price;
-        }
-
-        public Product(string name, int amount, double price, string description) : this (name, amount, price){
             Description = description;
-        }
-
-        public Product(string name, int amount, double price, string description, int discount) 
-        : this (name, amount, price, description)
-        {
-            DiscountPercent = discount;
-        }
-
-        public Product(string name, int amount, double price, string description, int discount, double rating) 
-        : this (name, amount, price, description, discount)
-        {
+            DiscountPercent = discountPercent;
             Rating = rating;
         }
+
+        
 
         public void Print(){
             Console.WriteLine($"Название товара: {Name}");
@@ -47,16 +36,22 @@ namespace ShopManagement
     }
 
     public class Program{
-        static void Main(){
-            Product product1 = new Product("Ручка", 50, 15.99);
-                Product product2 = new Product("Тетрадь", 100, 39.99, "96 листов, клетка");
-                Product product3 = new Product("Линейка", 80, 12.50, "Пластиковая, 30 см", 10);
-                Product product4 = new Product("Калькулятор", 20, 599.99, "Инженерный калькулятор", 15, 4.8);
+        public static void SetDefaultsIfNull(Product product)
+        {
+            product.Description ??= "Нет описания";
+            product.DiscountPercent ??= 0;
+            product.Rating ??= 0.0;
+        }
+        public static string GetProductDescription(Product? product)
+        {
+            return product?.Description ?? "Описание отсутствует";
+        }
 
-                product1.Print();
-                product2.Print();
-                product3.Print();
-                product4.Print();
+        static void Main(){
+            Product? product1 = new Product("Ручка", 50, 3.99);
+            Product? product2 = null;
+            Console.WriteLine(GetProductDescription(product1));
+            Console.WriteLine(GetProductDescription(product2));
         }
     }
 }
